@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B282F4F24301F8B00CC8F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F4E24301F8B00CC8F93 /* AppDelegate.swift */; };
+		8B282F5124301F8B00CC8F93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F5024301F8B00CC8F93 /* SceneDelegate.swift */; };
+		8B282F5324301F8B00CC8F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F5224301F8B00CC8F93 /* ViewController.swift */; };
+		8B282F5624301F8B00CC8F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B282F5424301F8B00CC8F93 /* Main.storyboard */; };
+		8B282F5824301F8C00CC8F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B282F5724301F8C00CC8F93 /* Assets.xcassets */; };
+		8B282F5B24301F8C00CC8F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B282F5924301F8C00CC8F93 /* LaunchScreen.storyboard */; };
+		8B282F6024301F8C00CC8F93 /* Fore Play WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B282F5F24301F8C00CC8F93 /* Fore Play WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B282F6624301F8C00CC8F93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B282F6424301F8C00CC8F93 /* Interface.storyboard */; };
+		8B282F6824301F8D00CC8F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B282F6724301F8D00CC8F93 /* Assets.xcassets */; };
+		8B282F6F24301F8D00CC8F93 /* Fore Play WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B282F6E24301F8D00CC8F93 /* Fore Play WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B282F7424301F8D00CC8F93 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F7324301F8D00CC8F93 /* InterfaceController.swift */; };
+		8B282F7624301F8D00CC8F93 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F7524301F8D00CC8F93 /* ExtensionDelegate.swift */; };
+		8B282F7824301F8D00CC8F93 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F7724301F8D00CC8F93 /* NotificationController.swift */; };
+		8B282F7A24301F8D00CC8F93 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282F7924301F8D00CC8F93 /* ComplicationController.swift */; };
+		8B282F7C24301F8E00CC8F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B282F7B24301F8E00CC8F93 /* Assets.xcassets */; };
+		8B282FDE2430353F00CC8F93 /* SelectCourseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282FDD2430353F00CC8F93 /* SelectCourseInterfaceController.swift */; };
+		8B282FE0243035E300CC8F93 /* PastRoundsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282FDF243035E300CC8F93 /* PastRoundsInterfaceController.swift */; };
+		8B282FE2243035F300CC8F93 /* ProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282FE1243035F200CC8F93 /* ProfileInterfaceController.swift */; };
+		8B282FE52430391000CC8F93 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B282FE42430391000CC8F93 /* Course.swift */; };
+		8B2830402431153100CC8F93 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28303F2431153100CC8F93 /* RowController.swift */; };
+		8B2830422431183600CC8F93 /* SelectHoleCountInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2830412431183600CC8F93 /* SelectHoleCountInterfaceController.swift */; };
+		8BE841F024311F0E00BE7BFD /* StartRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */; };
+		8BE841F2243122D700BE7BFD /* InRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */; };
+		8BE8423F24312BBC00BE7BFD /* SecondInRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8423E24312BBC00BE7BFD /* SecondInRoundInterfaceController.swift */; };
+		8BE8424124312BEF00BE7BFD /* ThirdInRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424024312BEF00BE7BFD /* ThirdInRoundInterfaceController.swift */; };
+		8BE8424324313B0000BE7BFD /* InRoundOptionsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424224313B0000BE7BFD /* InRoundOptionsInterfaceController.swift */; };
+		8BE8424524313B1F00BE7BFD /* InRoundMusicInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424424313B1F00BE7BFD /* InRoundMusicInterfaceController.swift */; };
+		8BE8424724313B3C00BE7BFD /* InRoundMainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424624313B3C00BE7BFD /* InRoundMainInterfaceController.swift */; };
+		8BE84249243142BD00BE7BFD /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE84248243142BD00BE7BFD /* Round.swift */; };
+		8BE8424B2431432C00BE7BFD /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424A2431432C00BE7BFD /* Hole.swift */; };
+		8BE8424D243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424C243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B282F6124301F8C00CC8F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B282F4324301F8B00CC8F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B282F5E24301F8C00CC8F93;
+			remoteInfo = "Fore Play WatchKit App";
+		};
+		8B282F7024301F8D00CC8F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B282F4324301F8B00CC8F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B282F6D24301F8D00CC8F93;
+			remoteInfo = "Fore Play WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B282F8424301F8E00CC8F93 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B282F6F24301F8D00CC8F93 /* Fore Play WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B282F8824301F8E00CC8F93 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B282F6024301F8C00CC8F93 /* Fore Play WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B282F4B24301F8B00CC8F93 /* Fore Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fore Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B282F4E24301F8B00CC8F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B282F5024301F8B00CC8F93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B282F5224301F8B00CC8F93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B282F5524301F8B00CC8F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B282F5724301F8C00CC8F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B282F5A24301F8C00CC8F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B282F5C24301F8C00CC8F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B282F5F24301F8C00CC8F93 /* Fore Play WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fore Play WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B282F6524301F8C00CC8F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B282F6724301F8D00CC8F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B282F6924301F8D00CC8F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B282F6E24301F8D00CC8F93 /* Fore Play WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fore Play WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B282F7324301F8D00CC8F93 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B282F7524301F8D00CC8F93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8B282F7724301F8D00CC8F93 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8B282F7924301F8D00CC8F93 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8B282F7B24301F8E00CC8F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B282F7D24301F8E00CC8F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B282F7E24301F8E00CC8F93 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8B282FDD2430353F00CC8F93 /* SelectCourseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCourseInterfaceController.swift; sourceTree = "<group>"; };
+		8B282FDF243035E300CC8F93 /* PastRoundsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRoundsInterfaceController.swift; sourceTree = "<group>"; };
+		8B282FE1243035F200CC8F93 /* ProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaceController.swift; sourceTree = "<group>"; };
+		8B282FE42430391000CC8F93 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		8B28303F2431153100CC8F93 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		8B2830412431183600CC8F93 /* SelectHoleCountInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHoleCountInterfaceController.swift; sourceTree = "<group>"; };
+		8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoundInterfaceController.swift; sourceTree = "<group>"; };
+		8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundInterfaceController.swift; sourceTree = "<group>"; };
+		8BE8423E24312BBC00BE7BFD /* SecondInRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInRoundInterfaceController.swift; sourceTree = "<group>"; };
+		8BE8424024312BEF00BE7BFD /* ThirdInRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdInRoundInterfaceController.swift; sourceTree = "<group>"; };
+		8BE8424224313B0000BE7BFD /* InRoundOptionsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundOptionsInterfaceController.swift; sourceTree = "<group>"; };
+		8BE8424424313B1F00BE7BFD /* InRoundMusicInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundMusicInterfaceController.swift; sourceTree = "<group>"; };
+		8BE8424624313B3C00BE7BFD /* InRoundMainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundMainInterfaceController.swift; sourceTree = "<group>"; };
+		8BE84248243142BD00BE7BFD /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		8BE8424A2431432C00BE7BFD /* Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
+		8BE8424C243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmFinishRoundInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B282F4824301F8B00CC8F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B282F6B24301F8D00CC8F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B282F4224301F8B00CC8F93 = {
+			isa = PBXGroup;
+			children = (
+				8B282F4D24301F8B00CC8F93 /* Fore Play */,
+				8B282F6324301F8C00CC8F93 /* Fore Play WatchKit App */,
+				8B282F7224301F8D00CC8F93 /* Fore Play WatchKit Extension */,
+				8B282F4C24301F8B00CC8F93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B282F4C24301F8B00CC8F93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B282F4B24301F8B00CC8F93 /* Fore Play.app */,
+				8B282F5F24301F8C00CC8F93 /* Fore Play WatchKit App.app */,
+				8B282F6E24301F8D00CC8F93 /* Fore Play WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B282F4D24301F8B00CC8F93 /* Fore Play */ = {
+			isa = PBXGroup;
+			children = (
+				8B282F4E24301F8B00CC8F93 /* AppDelegate.swift */,
+				8B282F5024301F8B00CC8F93 /* SceneDelegate.swift */,
+				8B282F5224301F8B00CC8F93 /* ViewController.swift */,
+				8B282F5424301F8B00CC8F93 /* Main.storyboard */,
+				8B282F5724301F8C00CC8F93 /* Assets.xcassets */,
+				8B282F5924301F8C00CC8F93 /* LaunchScreen.storyboard */,
+				8B282F5C24301F8C00CC8F93 /* Info.plist */,
+			);
+			path = "Fore Play";
+			sourceTree = "<group>";
+		};
+		8B282F6324301F8C00CC8F93 /* Fore Play WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8B282F6424301F8C00CC8F93 /* Interface.storyboard */,
+				8B282F6724301F8D00CC8F93 /* Assets.xcassets */,
+				8B282F6924301F8D00CC8F93 /* Info.plist */,
+			);
+			path = "Fore Play WatchKit App";
+			sourceTree = "<group>";
+		};
+		8B282F7224301F8D00CC8F93 /* Fore Play WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B282FE32430390100CC8F93 /* Models */,
+				8B282F7324301F8D00CC8F93 /* InterfaceController.swift */,
+				8B282FDD2430353F00CC8F93 /* SelectCourseInterfaceController.swift */,
+				8B2830412431183600CC8F93 /* SelectHoleCountInterfaceController.swift */,
+				8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */,
+				8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */,
+				8B282FDF243035E300CC8F93 /* PastRoundsInterfaceController.swift */,
+				8B282FE1243035F200CC8F93 /* ProfileInterfaceController.swift */,
+				8B282F7524301F8D00CC8F93 /* ExtensionDelegate.swift */,
+				8B282F7724301F8D00CC8F93 /* NotificationController.swift */,
+				8B282F7924301F8D00CC8F93 /* ComplicationController.swift */,
+				8B282F7B24301F8E00CC8F93 /* Assets.xcassets */,
+				8B282F7D24301F8E00CC8F93 /* Info.plist */,
+				8B282F7E24301F8E00CC8F93 /* PushNotificationPayload.apns */,
+				8B28303F2431153100CC8F93 /* RowController.swift */,
+				8BE8423E24312BBC00BE7BFD /* SecondInRoundInterfaceController.swift */,
+				8BE8424024312BEF00BE7BFD /* ThirdInRoundInterfaceController.swift */,
+				8BE8424224313B0000BE7BFD /* InRoundOptionsInterfaceController.swift */,
+				8BE8424424313B1F00BE7BFD /* InRoundMusicInterfaceController.swift */,
+				8BE8424624313B3C00BE7BFD /* InRoundMainInterfaceController.swift */,
+				8BE8424C243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift */,
+			);
+			path = "Fore Play WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8B282FE32430390100CC8F93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B282FE42430391000CC8F93 /* Course.swift */,
+				8BE84248243142BD00BE7BFD /* Round.swift */,
+				8BE8424A2431432C00BE7BFD /* Hole.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B282F4A24301F8B00CC8F93 /* Fore Play */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B282F8924301F8E00CC8F93 /* Build configuration list for PBXNativeTarget "Fore Play" */;
+			buildPhases = (
+				8B282F4724301F8B00CC8F93 /* Sources */,
+				8B282F4824301F8B00CC8F93 /* Frameworks */,
+				8B282F4924301F8B00CC8F93 /* Resources */,
+				8B282F8824301F8E00CC8F93 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B282F6224301F8C00CC8F93 /* PBXTargetDependency */,
+			);
+			name = "Fore Play";
+			productName = "Fore Play";
+			productReference = 8B282F4B24301F8B00CC8F93 /* Fore Play.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B282F5E24301F8C00CC8F93 /* Fore Play WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B282F8524301F8E00CC8F93 /* Build configuration list for PBXNativeTarget "Fore Play WatchKit App" */;
+			buildPhases = (
+				8B282F5D24301F8C00CC8F93 /* Resources */,
+				8B282F8424301F8E00CC8F93 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B282F7124301F8D00CC8F93 /* PBXTargetDependency */,
+			);
+			name = "Fore Play WatchKit App";
+			productName = "Fore Play WatchKit App";
+			productReference = 8B282F5F24301F8C00CC8F93 /* Fore Play WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8B282F6D24301F8D00CC8F93 /* Fore Play WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B282F8124301F8E00CC8F93 /* Build configuration list for PBXNativeTarget "Fore Play WatchKit Extension" */;
+			buildPhases = (
+				8B282F6A24301F8D00CC8F93 /* Sources */,
+				8B282F6B24301F8D00CC8F93 /* Frameworks */,
+				8B282F6C24301F8D00CC8F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fore Play WatchKit Extension";
+			productName = "Fore Play WatchKit Extension";
+			productReference = 8B282F6E24301F8D00CC8F93 /* Fore Play WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B282F4324301F8B00CC8F93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Brett Percy";
+				TargetAttributes = {
+					8B282F4A24301F8B00CC8F93 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8B282F5E24301F8C00CC8F93 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8B282F6D24301F8D00CC8F93 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8B282F4624301F8B00CC8F93 /* Build configuration list for PBXProject "Fore Play" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B282F4224301F8B00CC8F93;
+			productRefGroup = 8B282F4C24301F8B00CC8F93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B282F4A24301F8B00CC8F93 /* Fore Play */,
+				8B282F5E24301F8C00CC8F93 /* Fore Play WatchKit App */,
+				8B282F6D24301F8D00CC8F93 /* Fore Play WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B282F4924301F8B00CC8F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B282F5B24301F8C00CC8F93 /* LaunchScreen.storyboard in Resources */,
+				8B282F5824301F8C00CC8F93 /* Assets.xcassets in Resources */,
+				8B282F5624301F8B00CC8F93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B282F5D24301F8C00CC8F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B282F6824301F8D00CC8F93 /* Assets.xcassets in Resources */,
+				8B282F6624301F8C00CC8F93 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B282F6C24301F8D00CC8F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B282F7C24301F8E00CC8F93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B282F4724301F8B00CC8F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B282F5324301F8B00CC8F93 /* ViewController.swift in Sources */,
+				8B282F4F24301F8B00CC8F93 /* AppDelegate.swift in Sources */,
+				8B282F5124301F8B00CC8F93 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B282F6A24301F8D00CC8F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B282FE52430391000CC8F93 /* Course.swift in Sources */,
+				8B282F7824301F8D00CC8F93 /* NotificationController.swift in Sources */,
+				8BE841F2243122D700BE7BFD /* InRoundInterfaceController.swift in Sources */,
+				8B282FE2243035F300CC8F93 /* ProfileInterfaceController.swift in Sources */,
+				8B2830402431153100CC8F93 /* RowController.swift in Sources */,
+				8BE8424524313B1F00BE7BFD /* InRoundMusicInterfaceController.swift in Sources */,
+				8BE8424124312BEF00BE7BFD /* ThirdInRoundInterfaceController.swift in Sources */,
+				8B282F7A24301F8D00CC8F93 /* ComplicationController.swift in Sources */,
+				8BE8424724313B3C00BE7BFD /* InRoundMainInterfaceController.swift in Sources */,
+				8BE8424B2431432C00BE7BFD /* Hole.swift in Sources */,
+				8B2830422431183600CC8F93 /* SelectHoleCountInterfaceController.swift in Sources */,
+				8BE84249243142BD00BE7BFD /* Round.swift in Sources */,
+				8B282FDE2430353F00CC8F93 /* SelectCourseInterfaceController.swift in Sources */,
+				8B282F7624301F8D00CC8F93 /* ExtensionDelegate.swift in Sources */,
+				8BE8424D243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift in Sources */,
+				8BE841F024311F0E00BE7BFD /* StartRoundInterfaceController.swift in Sources */,
+				8BE8424324313B0000BE7BFD /* InRoundOptionsInterfaceController.swift in Sources */,
+				8BE8423F24312BBC00BE7BFD /* SecondInRoundInterfaceController.swift in Sources */,
+				8B282FE0243035E300CC8F93 /* PastRoundsInterfaceController.swift in Sources */,
+				8B282F7424301F8D00CC8F93 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B282F6224301F8C00CC8F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B282F5E24301F8C00CC8F93 /* Fore Play WatchKit App */;
+			targetProxy = 8B282F6124301F8C00CC8F93 /* PBXContainerItemProxy */;
+		};
+		8B282F7124301F8D00CC8F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B282F6D24301F8D00CC8F93 /* Fore Play WatchKit Extension */;
+			targetProxy = 8B282F7024301F8D00CC8F93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B282F5424301F8B00CC8F93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B282F5524301F8B00CC8F93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B282F5924301F8C00CC8F93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B282F5A24301F8C00CC8F93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B282F6424301F8C00CC8F93 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B282F6524301F8C00CC8F93 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B282F7F24301F8E00CC8F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B282F8024301F8E00CC8F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B282F8224301F8E00CC8F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DT434TB2T;
+				INFOPLIST_FILE = "Fore Play WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brettpercy.Fore-Play.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8B282F8324301F8E00CC8F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DT434TB2T;
+				INFOPLIST_FILE = "Fore Play WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brettpercy.Fore-Play.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8B282F8624301F8E00CC8F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DT434TB2T;
+				IBSC_MODULE = Fore_Play_WatchKit_Extension;
+				INFOPLIST_FILE = "Fore Play WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brettpercy.Fore-Play.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8B282F8724301F8E00CC8F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DT434TB2T;
+				IBSC_MODULE = Fore_Play_WatchKit_Extension;
+				INFOPLIST_FILE = "Fore Play WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brettpercy.Fore-Play.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8B282F8A24301F8E00CC8F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DT434TB2T;
+				INFOPLIST_FILE = "Fore Play/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brettpercy.Fore-Play";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B282F8B24301F8E00CC8F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DT434TB2T;
+				INFOPLIST_FILE = "Fore Play/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brettpercy.Fore-Play";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B282F4624301F8B00CC8F93 /* Build configuration list for PBXProject "Fore Play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B282F7F24301F8E00CC8F93 /* Debug */,
+				8B282F8024301F8E00CC8F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B282F8124301F8E00CC8F93 /* Build configuration list for PBXNativeTarget "Fore Play WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B282F8224301F8E00CC8F93 /* Debug */,
+				8B282F8324301F8E00CC8F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B282F8524301F8E00CC8F93 /* Build configuration list for PBXNativeTarget "Fore Play WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B282F8624301F8E00CC8F93 /* Debug */,
+				8B282F8724301F8E00CC8F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B282F8924301F8E00CC8F93 /* Build configuration list for PBXNativeTarget "Fore Play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B282F8A24301F8E00CC8F93 /* Debug */,
+				8B282F8B24301F8E00CC8F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B282F4324301F8B00CC8F93 /* Project object */;
+}
