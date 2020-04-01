@@ -23,9 +23,10 @@ class InRoundInterfaceController: WKInterfaceController {
         }
         
         // configures the paged app style of the in round experience
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("InRoundOptionsController", round as AnyObject),
-             ("InRoundMainController", round as AnyObject),
-             ("InRoundMusicController", round as AnyObject)])
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("InRoundOptionsController", round),
+             ("InRoundMainController", round),
+             ("InRoundMusicController", round)])
+
 
     }
     

@@ -22,12 +22,15 @@ class InRoundOptionsInterfaceController: WKInterfaceController {
         if let round = context as? Round {
             courseName.setText("Course: \(round.course.name)")
             currentTotalScore.setText("Total: \(round.currentTotalScore)")
+            self.round = round
         }
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+
+        currentTotalScore.setText("Total: \(round.currentTotalScore)")
         
     }
     

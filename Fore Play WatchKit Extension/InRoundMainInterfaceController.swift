@@ -31,6 +31,8 @@ class InRoundMainInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        print(round.currentHole)
+        print(round.currentTotalScore)
         
     }
     
@@ -39,10 +41,14 @@ class InRoundMainInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-//    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
-//        return round
+//    override func presentController(withName name: String, context: Any?) {
+//        <#code#>
 //    }
-    
+//
+//    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+//        var vc = segueIdentifier
+//    }
+//
 
     @IBAction func previousHole() {
         if (round.currentHole > 1){
