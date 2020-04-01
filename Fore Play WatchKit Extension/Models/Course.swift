@@ -10,5 +10,5 @@ struct Course {
     var name: String
     var numberOfHoles: Int
     var par: Int
-    var holes: [Hole]?
+    var holes: [Hole]
 }

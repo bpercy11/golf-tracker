@@ -14,6 +14,7 @@ class InRoundOptionsInterfaceController: WKInterfaceController {
 
     @IBOutlet weak var courseName: WKInterfaceLabel!
     @IBOutlet weak var currentTotalScore: WKInterfaceLabel!
+    @IBOutlet weak var beerCount: WKInterfaceLabel!
     var round: Round!
     
     override func awake(withContext context: Any?) {
@@ -32,6 +33,8 @@ class InRoundOptionsInterfaceController: WKInterfaceController {
 
         currentTotalScore.setText("Total: \(round.currentTotalScore)")
         
+        beerCount.setText("Beers: \(round.beerCount)")
+        
     }
     
     override func didDeactivate() {
@@ -40,5 +43,16 @@ class InRoundOptionsInterfaceController: WKInterfaceController {
     }
 
 
+
+    @IBAction func beerButtonLongPress(_ sender: Any) {
+        round.beerCount -= 1
+        beerCount.setText("Beers: \(round.beerCount)")
+        
+    }
+    
+    @IBAction func beerButton() {
+        round.beerCount += 1
+        beerCount.setText("Beers: \(round.beerCount)")
+    }
     
 }

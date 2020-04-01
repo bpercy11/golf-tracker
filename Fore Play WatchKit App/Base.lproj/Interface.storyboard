@@ -222,7 +222,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1114" y="-298"/>
+            <point key="canvasLocation" x="1551" y="-619"/>
         </scene>
         <!--Options-->
         <scene sceneID="D1N-Cg-b71">
@@ -241,7 +241,7 @@
                         </group>
                         <group width="1" height="0.16600000000000001" alignment="left" id="rOO-Lv-yNK">
                             <items>
-                                <label alignment="left" text="+/- Par" id="t2T-Fk-ZLe"/>
+                                <label alignment="left" text="Beers" id="t2T-Fk-ZLe"/>
                             </items>
                         </group>
                         <group width="1" height="69" alignment="left" id="tBu-bw-KBh">
@@ -250,7 +250,17 @@
                                     <color key="backgroundColor" red="0.0" green="0.60781271690000005" blue="0.69088288659999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </button>
                                 <button width="0.45000000000000001" height="1" alignment="right" backgroundImage="smiley" catalog="system" id="0o6-v6-edM">
+                                    <gestureRecognizers>
+                                        <longPressGestureRecognizer minimumPressDuration="1.5" id="DgK-9R-6Iz">
+                                            <connections>
+                                                <action selector="beerButtonLongPress:" destination="X4R-k4-iDt" id="DDL-ZQ-Wzy"/>
+                                            </connections>
+                                        </longPressGestureRecognizer>
+                                    </gestureRecognizers>
                                     <color key="backgroundColor" red="0.7651594883419689" green="0.48300671852391236" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="beerButton" destination="X4R-k4-iDt" id="e4m-b5-Igf"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -262,6 +272,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="beerCount" destination="t2T-Fk-ZLe" id="G3R-Yy-4V9"/>
                         <outlet property="courseName" destination="3qH-lo-GOm" id="7Us-qM-brg"/>
                         <outlet property="currentTotalScore" destination="AqK-ga-zf1" id="ImT-Tp-TLW"/>
                         <segue destination="hxc-ZG-pdh" kind="relationship" relationship="nextPage" id="HfV-qM-5tg"/>
@@ -343,6 +354,9 @@
                     </items>
                     <connections>
                         <outlet property="currentHole" destination="WeQ-XL-393" id="AZt-M5-bH4"/>
+                        <outlet property="firButton" destination="Tmk-it-Zoe" id="bXl-Z4-6Js"/>
+                        <outlet property="girButton" destination="YTu-KO-Loi" id="2cs-aK-IMc"/>
+                        <outlet property="strokeCount" destination="dP5-Hd-CfO" id="c2Q-O6-DFs"/>
                         <segue destination="skS-jp-sLj" kind="relationship" relationship="nextPage" id="4xR-nZ-cN8"/>
                     </connections>
                 </controller>

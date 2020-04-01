@@ -9,6 +9,7 @@
 struct Hole {
     var number: Int
     var par: Int
+    var score: Int
     var FIR: Bool
     var GIR: Bool
 }

@@ -11,7 +11,6 @@ class Round {
     var course: Course
     var date: Date?
     var currentHole: Int
-    var currentScore: Int
     var currentTotalScore: Int
     var plusMinusPar: Int
     var beerCount: Int
@@ -19,8 +18,7 @@ class Round {
     init(_ course: Course) {
         self.course = course
         date = Date()
-        currentHole = 1
-        currentScore = 0
+        currentHole = 0
         currentTotalScore = 0
         plusMinusPar = 0
         beerCount = 0
