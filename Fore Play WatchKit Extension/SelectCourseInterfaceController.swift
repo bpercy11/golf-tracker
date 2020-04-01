@@ -13,11 +13,76 @@ class SelectCourseInterfaceController: WKInterfaceController {
     @IBOutlet var courseTableView: WKInterfaceTable!
     
     let courses = [
-        Course(name: "Monona", holes: "9", par: "36"),
-        Course(name: "The Oaks", holes: "18", par: "72"),
-        Course(name: "Gross National", holes: "18", par: "71"),
-        Course(name: "Theodore Wirth", holes: "18", par: "72"),
-        Course(name: "Door Creek", holes: "18", par: "71")
+        Course(name: "Monona", numberOfHoles: 9, par: 36,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+                ]
+        ),
+        Course(name: "The Oaks", numberOfHoles: 18, par: 72,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Gross National", numberOfHoles: 18, par: 71,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Theodore Wirth", numberOfHoles: 18, par: 72,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Door Creek", numberOfHoles: 18, par: 71,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Edinbourough", numberOfHoles: 18, par: 70,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Brookigns", numberOfHoles: 9, par: 37,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Nine Springs", numberOfHoles: 9, par: 36,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Yahara West", numberOfHoles: 18, par: 71,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Yahara East", numberOfHoles: 18, par: 72,
+               holes: [
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false),
+                    Hole(number: 1, par: 5, FIR: false, GIR: false)
+            ]
+        ),
     ]
 
   

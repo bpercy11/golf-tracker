@@ -24,7 +24,7 @@ class StartRoundInterfaceController: WKInterfaceController {
         if let course = context as? Course {
             courseName.setText(course.name)
             par.setText("Par: \(course.par)")
-            holes.setText("Holes: \(course.holes)")
+            holes.setText("Holes: \(course.numberOfHoles)")
             
             courseContext = course
         }

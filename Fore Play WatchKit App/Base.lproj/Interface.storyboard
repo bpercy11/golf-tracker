@@ -11,7 +11,7 @@
             <objects>
                 <controller title="ForePlay" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Fore_Play_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" height="100" alignment="center" title="New Round" id="gbf-KG-6MJ">
+                        <button width="104" height="90" alignment="center" backgroundImage="plus" catalog="system" id="gbf-KG-6MJ">
                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="system" weight="medium" pointSize="34"/>
@@ -21,13 +21,13 @@
                         </button>
                         <group width="1" height="77" alignment="left" id="6La-dA-A0V">
                             <items>
-                                <button width="0.5" height="70" alignment="left" title="Past Rounds" id="H4A-LV-5ji">
+                                <button width="83" height="80" alignment="left" backgroundImage="book.circle" catalog="system" id="H4A-LV-5ji">
                                     <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <segue destination="YSh-EO-xnm" kind="push" id="kh7-AP-O5R"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="70" alignment="left" title="Profile" id="1pK-mb-DgD">
+                                <button width="83" height="80" alignment="right" backgroundImage="person" catalog="system" id="1pK-mb-DgD">
                                     <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <segue destination="Nu5-g1-K4d" kind="push" id="IE9-zd-YD2"/>
@@ -38,7 +38,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-34" y="-279"/>
+            <point key="canvasLocation" x="-34" y="-312.67857142857144"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -231,17 +231,17 @@
                     <items>
                         <group width="1" height="0.16600000000000001" alignment="left" id="v6I-oo-gm8">
                             <items>
-                                <label alignment="left" text="Total Strokes:" id="3qH-lo-GOm"/>
+                                <label alignment="left" text="Course Name" id="3qH-lo-GOm"/>
                             </items>
                         </group>
                         <group width="1" height="0.1666" alignment="left" id="W8B-9h-sUl">
                             <items>
-                                <label alignment="left" text="+/-: " id="AqK-ga-zf1"/>
+                                <label alignment="left" text="Total Strokes" id="AqK-ga-zf1"/>
                             </items>
                         </group>
                         <group width="1" height="0.16600000000000001" alignment="left" id="rOO-Lv-yNK">
                             <items>
-                                <label alignment="left" text="Label" id="t2T-Fk-ZLe"/>
+                                <label alignment="left" text="+/- Par" id="t2T-Fk-ZLe"/>
                             </items>
                         </group>
                         <group width="1" height="69" alignment="left" id="tBu-bw-KBh">
@@ -262,6 +262,8 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="courseName" destination="3qH-lo-GOm" id="7Us-qM-brg"/>
+                        <outlet property="currentTotalScore" destination="AqK-ga-zf1" id="ImT-Tp-TLW"/>
                         <segue destination="hxc-ZG-pdh" kind="relationship" relationship="nextPage" id="HfV-qM-5tg"/>
                     </connections>
                 </controller>
@@ -279,10 +281,16 @@
                                 <button width="0.5" height="1" alignment="left" title="&lt;- Hole" id="E5G-je-zYE">
                                     <color key="backgroundColor" red="0.66286787320874974" green="0.68942815069999996" blue="0.086127666866314748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="previousHole" destination="hxc-ZG-pdh" id="I6A-KM-YgD"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="1" alignment="left" title="Hole -&gt;" id="iZn-Tf-tbw">
                                     <color key="backgroundColor" red="0.66286787320874974" green="0.68942815069999996" blue="0.086127666866314748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="nextHole" destination="hxc-ZG-pdh" id="ali-Dn-ONI"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -291,6 +299,9 @@
                                 <button width="0.25" height="1" alignment="left" title="-" id="4mN-tB-co5">
                                     <color key="backgroundColor" red="0.0" green="0.60781271693816086" blue="0.69088288664974096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="subtractStroke" destination="hxc-ZG-pdh" id="5eP-nn-OKI"/>
+                                    </connections>
                                 </button>
                                 <group width="0.5" height="1" alignment="left" id="0f7-9z-pXj">
                                     <items>
@@ -302,6 +313,9 @@
                                 <button width="0.25" height="1" alignment="left" title="+" id="9ko-Xp-8Ea">
                                     <color key="backgroundColor" red="0.1096908823" green="0.60804522039999997" blue="0.68942815069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="addStroke" destination="hxc-ZG-pdh" id="RHe-kI-mWO"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -309,9 +323,15 @@
                             <items>
                                 <button width="0.5" height="1" alignment="left" title="FIR" id="Tmk-it-Zoe">
                                     <color key="backgroundColor" red="0.040789254588374416" green="0.38666089830777206" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="fairwayInRegulation" destination="hxc-ZG-pdh" id="N8Z-ZJ-gKt"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="1" alignment="left" title="GIR" id="YTu-KO-Loi">
                                     <color key="backgroundColor" red="0.052961461250000001" green="0.38849407429999999" blue="0.001090570586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="greenInRegulation" destination="hxc-ZG-pdh" id="jtQ-5R-lC4"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -322,6 +342,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="currentHole" destination="WeQ-XL-393" id="AZt-M5-bH4"/>
                         <segue destination="skS-jp-sLj" kind="relationship" relationship="nextPage" id="4xR-nZ-cN8"/>
                     </connections>
                 </controller>
@@ -342,7 +363,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.circle" catalog="system" width="64" height="60"/>
         <image name="checkmark.rectangle.fill" catalog="system" width="64" height="44"/>
+        <image name="person" catalog="system" width="64" height="60"/>
+        <image name="plus" catalog="system" width="64" height="58"/>
         <image name="smiley" catalog="system" width="64" height="60"/>
     </resources>
 </document>

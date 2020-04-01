@@ -7,7 +7,8 @@
 //
 
 struct Course {
-    let name: String
-    var holes: String
-    var par: String
+    var name: String
+    var numberOfHoles: Int
+    var par: Int
+    var holes: [Hole]?
 }

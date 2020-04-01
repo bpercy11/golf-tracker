@@ -11,10 +11,20 @@ import Foundation
 
 class InRoundMainInterfaceController: WKInterfaceController {
 
+    // current hole label at top of screen
+    @IBOutlet weak var currentHole: WKInterfaceLabel!
+    
+
+    var round: Round!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         becomeCurrentPage()
+        
+        if let round = context as? Round {
+            currentHole.setText("Hole: \(String(round.currentHole))")
+            self.round = round
+        }
         // Configure interface objects here.
     }
     
@@ -29,6 +39,35 @@ class InRoundMainInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+//    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+//        return round
+//    }
+    
 
+    @IBAction func previousHole() {
+        if (round.currentHole > 1){
+            round.currentHole = round.currentHole - 1
+            currentHole.setText("Hole: \(String(round.currentHole))")
+        }
+    }
+    
+    
+    @IBAction func nextHole() {
+        round.currentHole = round.currentHole + 1
+        currentHole.setText("Hole: \(String(round.currentHole))")
+    }
+    
+    @IBAction func subtractStroke() {
+    }
+    
+    @IBAction func addStroke() {
+        round.currentTotalScore = round.currentTotalScore + 1
+    }
+    
+    @IBAction func fairwayInRegulation() {
+    }
+    
+    @IBAction func greenInRegulation() {
+    }
     
 }

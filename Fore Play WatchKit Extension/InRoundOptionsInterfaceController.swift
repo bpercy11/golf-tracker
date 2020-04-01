@@ -12,11 +12,17 @@ import Foundation
 
 class InRoundOptionsInterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var courseName: WKInterfaceLabel!
+    @IBOutlet weak var currentTotalScore: WKInterfaceLabel!
+    var round: Round!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        if let round = context as? Round {
+            courseName.setText("Course: \(round.course.name)")
+            currentTotalScore.setText("Total: \(round.currentTotalScore)")
+        }
     }
     
     override func willActivate() {

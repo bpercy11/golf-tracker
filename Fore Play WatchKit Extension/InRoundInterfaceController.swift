@@ -12,10 +12,20 @@ import Foundation
 
 class InRoundInterfaceController: WKInterfaceController {
 
+    // round object that is manipulated throughout a round of golf
+    var round: Round!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("InRoundOptionsController", context as AnyObject),("InRoundMainController", context as AnyObject),("InRoundMusicController", context as AnyObject)])
+
+        if let course = context as? Course {
+            round = Round(course)
+        }
+        
+        // configures the paged app style of the in round experience
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("InRoundOptionsController", round as AnyObject),
+             ("InRoundMainController", round as AnyObject),
+             ("InRoundMusicController", round as AnyObject)])
 
     }
     

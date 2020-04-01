@@ -27,12 +27,13 @@ class SelectHoleCountInterfaceController: WKInterfaceController {
         if let course = context as? Course {
             courseName.setText(course.name)
             par.setText("Par: \(course.par)")
-            holeCount.setText("Holes: \(course.holes)")
+            holeCount.setText("Holes: \(course.numberOfHoles)")
             
             
-            if course.holes == "9" {
+            if course.numberOfHoles == 9 {
                 eighteenButton.setEnabled(false)
                 backNineButton.setEnabled(false)
+                frontNineButton.setTitle("9")
             }
             
             courseContext = course
@@ -52,17 +53,17 @@ class SelectHoleCountInterfaceController: WKInterfaceController {
 
     
     @IBAction func eighteenButtonPress() {
-        courseContext.holes = "18"
+        courseContext.numberOfHoles = 18
         pushController(withName: "StartRoundInterfaceController", context: courseContext)
     }
     
     @IBAction func frontNineButtonPress() {
-        courseContext.holes = "Front 9"
+        courseContext.numberOfHoles = 9
         pushController(withName: "StartRoundInterfaceController", context: courseContext)
     }
     
     @IBAction func backNineButtonPress() {
-        courseContext.holes = "Back 9"
+        courseContext.numberOfHoles = 9
         pushController(withName: "StartRoundInterfaceController", context: courseContext)
     }
     

@@ -7,14 +7,31 @@
 //
 import Foundation
 
-struct Round {
-    let course: Course
+class Round {
+    var course: Course
+    var date: Date?
     var currentHole: Int
     var currentScore: Int
+    var currentTotalScore: Int
     var plusMinusPar: Int
-    var holes: [Hole]
-    var date: Date
-    var time: Timer
-    var beers: Int
+    var beerCount: Int
+    
+    init(_ course: Course) {
+        self.course = course
+        date = Date()
+        currentHole = 1
+        currentScore = 0
+        currentTotalScore = 0
+        plusMinusPar = 0
+        beerCount = 0
+    }
+    
+//    private func GetDate() -> Date {
+//        let date = Date()
+//        let format = DateFormatter()
+//        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//        let formattedDate = format.string(from: date)
+//        return formattedDate
+//    }
     
 }
