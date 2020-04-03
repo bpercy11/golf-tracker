@@ -42,7 +42,7 @@ class InRoundMainInterfaceController: WKInterfaceController {
             currentHole.setText("Hole: \(String(round.currentHole + 1))")
             self.round = round
         }
-        // Configure interface objects here.
+        
     }
     
     override func willActivate() {

@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.tabBarItem.title = "Home"
+        self.navigationItem.title = "ForePlay"
+        self.navigationItem.rightBarButtonItem?.image?.size
     }
+
 
 
 }

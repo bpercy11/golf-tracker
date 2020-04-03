@@ -5,13 +5,12 @@
 //  Created by Brett Percy on 3/28/20.
 //  Copyright © 2020 Brett Percy. All rights reserved.
 //
-
 import WatchKit
 import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -21,8 +20,7 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        super.willActivate()        
-        
+        super.willActivate()
     }
     
     override func didDeactivate() {
@@ -30,6 +28,6 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-
+    
     
 }

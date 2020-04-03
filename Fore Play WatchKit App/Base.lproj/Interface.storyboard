@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch44"/>
+    <device id="watch42"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
@@ -11,7 +11,7 @@
             <objects>
                 <controller title="ForePlay" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Fore_Play_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="104" height="90" alignment="center" backgroundImage="plus" catalog="system" id="gbf-KG-6MJ">
+                        <button width="103" height="87" alignment="center" backgroundImage="plus" catalog="system" id="gbf-KG-6MJ">
                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="system" weight="medium" pointSize="34"/>
@@ -19,15 +19,16 @@
                                 <segue destination="0dQ-uk-Ljk" kind="push" id="fTP-Iq-1pf"/>
                             </connections>
                         </button>
-                        <group width="1" height="77" alignment="left" id="6La-dA-A0V">
+                        <group width="1" height="0.10000000000000001" alignment="left" id="lkH-fW-xAf"/>
+                        <group width="1" height="62" alignment="left" id="6La-dA-A0V">
                             <items>
-                                <button width="83" height="80" alignment="left" backgroundImage="book.circle" catalog="system" id="H4A-LV-5ji">
+                                <button width="71" height="79" alignment="left" verticalAlignment="bottom" backgroundImage="book.circle" catalog="system" id="H4A-LV-5ji">
                                     <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <segue destination="YSh-EO-xnm" kind="push" id="kh7-AP-O5R"/>
                                     </connections>
                                 </button>
-                                <button width="83" height="80" alignment="right" backgroundImage="person" catalog="system" id="1pK-mb-DgD">
+                                <button width="70" height="79" alignment="right" verticalAlignment="bottom" backgroundImage="person" catalog="system" id="1pK-mb-DgD">
                                     <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <segue destination="Nu5-g1-K4d" kind="push" id="IE9-zd-YD2"/>
@@ -38,7 +39,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-34" y="-312.67857142857144"/>
+            <point key="canvasLocation" x="-34" y="-318.64102564102564"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -316,8 +317,8 @@
                                 </button>
                                 <group width="0.5" height="1" alignment="left" id="0f7-9z-pXj">
                                     <items>
-                                        <label width="1" height="1" alignment="center" verticalAlignment="center" text="Strokes" textAlignment="center" id="dP5-Hd-CfO">
-                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        <label width="1" height="1" alignment="center" verticalAlignment="center" text="SC" textAlignment="center" id="dP5-Hd-CfO">
+                                            <fontDescription key="font" type="system" pointSize="65"/>
                                         </label>
                                     </items>
                                 </group>
