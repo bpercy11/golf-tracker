@@ -141,14 +141,14 @@
                                 </button>
                                 <button width="0.33000000000000002" height="179" alignment="left" title="Front 9" id="NYb-Nm-WPO">
                                     <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
                                     <connections>
                                         <action selector="frontNineButtonPress" destination="TrQ-oE-Pb0" id="xoO-bL-Kzx"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" height="312" alignment="left" title="Back 9" id="3xK-P6-rI9">
                                     <color key="backgroundColor" red="0.018001371990000001" green="0.18043923379999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
                                     <connections>
                                         <action selector="backNineButtonPress" destination="TrQ-oE-Pb0" id="Swa-dF-scL"/>
                                     </connections>
@@ -180,7 +180,7 @@
                         <label alignment="left" text="Course Name" id="68Q-pW-qvs"/>
                         <label alignment="left" text="Par" id="w4Y-eV-csZ"/>
                         <label alignment="left" text="Holes Selected" id="l55-LV-Rh3"/>
-                        <group width="114" height="114" alignment="center" verticalAlignment="center" radius="50" id="mQB-te-oRE">
+                        <group width="100" height="100" alignment="center" verticalAlignment="center" radius="50" id="mQB-te-oRE">
                             <items>
                                 <button width="146" height="146" alignment="left" title="Tee Off!" id="oP3-M1-UiN">
                                     <color key="backgroundColor" red="0.069102231523748794" green="0.66119899605634258" blue="0.85053027849740936" alpha="0.698943661971831" colorSpace="custom" customColorSpace="sRGB"/>
@@ -247,10 +247,10 @@
                         </group>
                         <group width="1" height="69" alignment="left" id="tBu-bw-KBh">
                             <items>
-                                <button width="0.45000000000000001" height="1" alignment="left" backgroundImage="checkmark.rectangle.fill" catalog="system" id="aB4-2T-vLb">
+                                <button width="0.45000000000000001" height="0.90000000000000002" alignment="left" backgroundImage="checkmark.rectangle.fill" catalog="system" id="aB4-2T-vLb">
                                     <color key="backgroundColor" red="0.0" green="0.60781271690000005" blue="0.69088288659999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </button>
-                                <button width="0.45000000000000001" height="1" alignment="right" backgroundImage="smiley" catalog="system" id="0o6-v6-edM">
+                                <button width="0.45000000000000001" height="0.90000000000000002" alignment="right" backgroundImage="smiley" catalog="system" id="0o6-v6-edM">
                                     <gestureRecognizers>
                                         <longPressGestureRecognizer minimumPressDuration="1.5" id="DgK-9R-6Iz">
                                             <connections>
@@ -265,7 +265,7 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="rJD-zF-uYY">
+                        <group width="1" alignment="center" id="rJD-zF-uYY">
                             <items>
                                 <label width="0.5" alignment="left" text="Finish  " textAlignment="center" id="Ua4-F9-f5A"/>
                                 <label width="0.5" widthAdjustment="-2" alignment="right" text="  Beer" textAlignment="center" id="nno-fP-Ggj"/>
@@ -290,15 +290,15 @@
                         <label height="20" alignment="left" text="Current Hole" id="WeQ-XL-393"/>
                         <group width="1" height="23" alignment="left" id="TOx-G2-uqQ">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="&lt;- Hole" id="E5G-je-zYE">
-                                    <color key="backgroundColor" red="0.66286787320874974" green="0.68942815069999996" blue="0.086127666866314748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <button width="0.5" height="1" alignment="left" title="&lt; Hole" id="E5G-je-zYE">
+                                    <color key="backgroundColor" red="0.8290371192893401" green="0.57831537057495053" blue="0.24995805971243676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                     <connections>
                                         <action selector="previousHole" destination="hxc-ZG-pdh" id="I6A-KM-YgD"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="1" alignment="left" title="Hole -&gt;" id="iZn-Tf-tbw">
-                                    <color key="backgroundColor" red="0.66286787320874974" green="0.68942815069999996" blue="0.086127666866314748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <button width="0.5" height="1" alignment="left" title="Hole &gt;" id="iZn-Tf-tbw">
+                                    <color key="backgroundColor" red="0.8255106807" green="0.57618600129999997" blue="0.2538836002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                     <connections>
                                         <action selector="nextHole" destination="hxc-ZG-pdh" id="ali-Dn-ONI"/>
