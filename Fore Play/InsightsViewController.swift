@@ -13,7 +13,7 @@ class InsightsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.title = "Insights"
-        self.navigationItem.title = "Insights"
+        self.navigationItem.title = "ForePlay"
         // Do any additional setup after loading the view.
     }
     
