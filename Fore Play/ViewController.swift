@@ -15,10 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.tabBarItem.title = "Home"
         self.navigationItem.title = "ForePlay"
-        self.navigationItem.rightBarButtonItem?.image?.size
+        
     }
 
 
+    
 
 }
 
