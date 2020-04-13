@@ -8,8 +8,107 @@
 
 import UIKit
 
-class StartNewRoundViewController: UIViewController {
+class CourseTableViewCell: UITableViewCell {
+    @IBOutlet weak var courseNameLabel: UILabel!
+    @IBOutlet weak var parLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var courseImage: UIImageView!
+}
 
+class StartNewRoundViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let courses = [
+        Course(name: "Monona", numberOfHoles: 9, par: 36,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+                ]
+        ),
+        Course(name: "The Oaks", numberOfHoles: 18, par: 72,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Gross National", numberOfHoles: 18, par: 71,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Theodore Wirth", numberOfHoles: 18, par: 72,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Door Creek", numberOfHoles: 18, par: 71,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Edinbourough", numberOfHoles: 18, par: 70,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Brookigns", numberOfHoles: 9, par: 37,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Nine Springs", numberOfHoles: 9, par: 36,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Yahara West", numberOfHoles: 18, par: 71,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+        Course(name: "Yahara East", numberOfHoles: 18, par: 72,
+               holes: [
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false),
+                Hole(number: 1, par: 5, score: 0, FIR: false, GIR: false)
+            ]
+        ),
+    ]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return courses.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "courseTableCell", for: indexPath) as! CourseTableViewCell
+        
+        cell.courseNameLabel?.text = courses[indexPath.row].name
+        cell.parLabel?.text = "Par: \((String(courses[indexPath.row].name)))"
+        cell.locationLabel?.text = "Madison, WI"
+        //cell.textLabel?.text = courses[indexPath.row].name
+        
+        return cell
+    }
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
