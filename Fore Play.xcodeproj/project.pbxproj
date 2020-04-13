@@ -38,6 +38,8 @@
 		8B43267624402BE200D90EDD /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43267524402BE200D90EDD /* Hole.swift */; };
 		8B43267824402D1100D90EDD /* PastRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43267724402D1100D90EDD /* PastRound.swift */; };
 		8B8CBD5D2444085000002E02 /* StartNewRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */; };
+		8B8CBD5F24442C5500002E02 /* EnterPastRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */; };
+		8B8CBD6224442CE200002E02 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */; };
 		8B9611E2243EB08D0031D11F /* NewRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */; };
 		8BE841F024311F0E00BE7BFD /* StartRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */; };
 		8BE841F2243122D700BE7BFD /* InRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */; };
@@ -130,6 +132,8 @@
 		8B43267524402BE200D90EDD /* Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
 		8B43267724402D1100D90EDD /* PastRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRound.swift; sourceTree = "<group>"; };
 		8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNewRoundViewController.swift; sourceTree = "<group>"; };
+		8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPastRoundViewController.swift; sourceTree = "<group>"; };
+		8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoundViewController.swift; sourceTree = "<group>"; };
 		8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoundInterfaceController.swift; sourceTree = "<group>"; };
 		8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundInterfaceController.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		8B282F4D24301F8B00CC8F93 /* Fore Play */ = {
 			isa = PBXGroup;
 			children = (
+				8B8CBD6024442CBD00002E02 /* TableViewCells */,
 				8B43267024402B6C00D90EDD /* Models */,
 				8B282F4E24301F8B00CC8F93 /* AppDelegate.swift */,
 				8B282F5024301F8B00CC8F93 /* SceneDelegate.swift */,
@@ -199,6 +204,7 @@
 				8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */,
 				8B43266E24402A7800D90EDD /* RoundHistoryViewController.swift */,
 				8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */,
+				8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */,
 			);
 			path = "Fore Play";
 			sourceTree = "<group>";
@@ -260,6 +266,14 @@
 				8B43267724402D1100D90EDD /* PastRound.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8B8CBD6024442CBD00002E02 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,11 +410,13 @@
 			files = (
 				8B9611E2243EB08D0031D11F /* NewRoundViewController.swift in Sources */,
 				8B43267624402BE200D90EDD /* Hole.swift in Sources */,
+				8B8CBD5F24442C5500002E02 /* EnterPastRoundViewController.swift in Sources */,
 				8B282F5324301F8B00CC8F93 /* ViewController.swift in Sources */,
 				8B43267224402BAA00D90EDD /* Course.swift in Sources */,
 				8B43267424402BC300D90EDD /* Round.swift in Sources */,
 				8B2692312436A15E00BA3DBE /* OtherViewController.swift in Sources */,
 				8B43267824402D1100D90EDD /* PastRound.swift in Sources */,
+				8B8CBD6224442CE200002E02 /* CourseTableViewCell.swift in Sources */,
 				8B26922D2436A0CD00BA3DBE /* CoursesViewController.swift in Sources */,
 				8B26922F2436A11600BA3DBE /* InsightsViewController.swift in Sources */,
 				8B8CBD5D2444085000002E02 /* StartNewRoundViewController.swift in Sources */,
