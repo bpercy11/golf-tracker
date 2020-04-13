@@ -167,6 +167,7 @@
                                 <state key="normal" image="line.horizontal.3" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="black"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -185,6 +186,7 @@
                                 <state key="normal" image="plus" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="black"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -240,6 +242,7 @@
                                 <state key="normal" image="line.horizontal.3" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="black"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -261,6 +264,7 @@
                                 <state key="normal" image="plus" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="black"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -324,6 +328,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="RII-03-CK1" kind="show" id="aoC-57-yml"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syK-oJ-3qE" userLabel="Add Round Button">
                                 <rect key="frame" x="175" y="542" width="64" height="64"/>
@@ -364,6 +371,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="FHP-d2-h6s" eventType="touchUpInside" id="M3Z-QJ-90n"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start New Round" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8l-Ep-0Q4">
                                 <rect key="frame" x="124" y="461" width="176" height="29"/>
@@ -410,10 +420,35 @@
             </objects>
             <point key="canvasLocation" x="5528.985507246377" y="-897.32142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Start New Round View Controller-->
+        <scene sceneID="1jp-UO-WYR">
+            <objects>
+                <viewController id="RII-03-CK1" customClass="StartNewRoundViewController" customModule="Fore_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I6G-le-3g1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="testttt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGT-C3-z5h">
+                                <rect key="frame" x="164" y="422" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BSo-9z-PZh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xye-YR-rff"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SQM-0k-r0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6441" y="-1382"/>
+        </scene>
+        <!--Round History View Controller-->
         <scene sceneID="fg2-5C-Lal">
             <objects>
-                <viewController id="6DA-rt-Kqf" sceneMemberID="viewController">
+                <viewController id="6DA-rt-Kqf" customClass="RoundHistoryViewController" customModule="Fore_Play" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tr2-z5-Jud">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,10 +457,82 @@
                                 <rect key="frame" x="-165" y="0.0" width="579" height="856"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUND HISTORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H6-V1-vj5">
+                                <rect key="frame" x="30" y="20" width="354" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" alpha="0.29999999999999999" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P9U-6w-bmN">
+                                <rect key="frame" x="30" y="95" width="354" height="550"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="roundHistoryCell" id="yN2-TK-nYq">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yN2-TK-nYq" id="a79-wZ-mOH">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6DA-rt-Kqf" id="X30-6I-vSE"/>
+                                    <outlet property="delegate" destination="6DA-rt-Kqf" id="ukf-Or-PCO"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I0-dw-6Rw" userLabel="Add Round Button">
+                                <rect key="frame" x="175" y="695" width="64" height="64"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="DHD-LB-7a7"/>
+                                    <constraint firstAttribute="height" constant="64" id="NIC-28-7a6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="black"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="6DA-rt-Kqf" eventType="touchUpInside" id="QAx-9L-qD9"/>
+                                    <action selector="backButton:" destination="FHP-d2-h6s" eventType="touchUpInside" id="sBT-Lq-8ge"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQi-Nx-wd9">
+                                <rect key="frame" x="181" y="767" width="52" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HOM-un-or9" firstAttribute="trailing" secondItem="7I0-dw-6Rw" secondAttribute="trailing" constant="175" id="A9G-Xh-5KZ"/>
+                            <constraint firstItem="7I0-dw-6Rw" firstAttribute="leading" secondItem="HOM-un-or9" secondAttribute="leading" constant="175" id="Cwp-0T-Ygh"/>
+                            <constraint firstItem="HOM-un-or9" firstAttribute="trailing" secondItem="5H6-V1-vj5" secondAttribute="trailing" constant="30" id="KR1-LO-lzG"/>
+                            <constraint firstItem="P9U-6w-bmN" firstAttribute="leading" secondItem="HOM-un-or9" secondAttribute="leading" constant="30" id="WAx-8e-NPO"/>
+                            <constraint firstItem="HOM-un-or9" firstAttribute="bottom" secondItem="7I0-dw-6Rw" secondAttribute="bottom" constant="49" id="YCa-6G-Yeb"/>
+                            <constraint firstItem="5H6-V1-vj5" firstAttribute="leading" secondItem="HOM-un-or9" secondAttribute="leading" constant="30" id="dJd-yT-YwI"/>
+                            <constraint firstItem="HOM-un-or9" firstAttribute="trailing" secondItem="P9U-6w-bmN" secondAttribute="trailing" constant="30" id="gxG-yb-2vQ"/>
+                            <constraint firstItem="7I0-dw-6Rw" firstAttribute="top" secondItem="P9U-6w-bmN" secondAttribute="bottom" constant="50" id="hmP-BS-nyw"/>
+                            <constraint firstItem="P9U-6w-bmN" firstAttribute="top" secondItem="5H6-V1-vj5" secondAttribute="bottom" constant="21" id="ijm-Hb-r4w"/>
+                            <constraint firstItem="5H6-V1-vj5" firstAttribute="top" secondItem="HOM-un-or9" secondAttribute="top" constant="20" id="ln0-SG-eAW"/>
+                            <constraint firstItem="7I0-dw-6Rw" firstAttribute="top" secondItem="P9U-6w-bmN" secondAttribute="bottom" constant="50" id="zbG-Sg-dQ7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HOM-un-or9"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IEO-k7-UjV"/>
+                    <connections>
+                        <outlet property="roundHistoryTableView" destination="P9U-6w-bmN" id="Hoj-Ii-lip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSM-RU-cfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
