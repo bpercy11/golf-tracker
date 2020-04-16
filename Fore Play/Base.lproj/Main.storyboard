@@ -484,6 +484,11 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="RII-03-CK1" id="3ts-hR-BpB"/>
                                     <outlet property="delegate" destination="RII-03-CK1" id="hUG-6v-See"/>

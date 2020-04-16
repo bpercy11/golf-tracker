@@ -40,6 +40,7 @@
 		8B8CBD5D2444085000002E02 /* StartNewRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */; };
 		8B8CBD5F24442C5500002E02 /* EnterPastRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */; };
 		8B8CBD6224442CE200002E02 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */; };
+		8B8CBD642444D55400002E02 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD632444D55400002E02 /* GlobalVariables.swift */; };
 		8B9611E2243EB08D0031D11F /* NewRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */; };
 		8BE841F024311F0E00BE7BFD /* StartRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */; };
 		8BE841F2243122D700BE7BFD /* InRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */; };
@@ -134,6 +135,7 @@
 		8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNewRoundViewController.swift; sourceTree = "<group>"; };
 		8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPastRoundViewController.swift; sourceTree = "<group>"; };
 		8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		8B8CBD632444D55400002E02 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoundViewController.swift; sourceTree = "<group>"; };
 		8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoundInterfaceController.swift; sourceTree = "<group>"; };
 		8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundInterfaceController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				8B43266E24402A7800D90EDD /* RoundHistoryViewController.swift */,
 				8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */,
 				8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */,
+				8B8CBD632444D55400002E02 /* GlobalVariables.swift */,
 			);
 			path = "Fore Play";
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				8B282F4F24301F8B00CC8F93 /* AppDelegate.swift in Sources */,
 				8B282F5124301F8B00CC8F93 /* SceneDelegate.swift in Sources */,
 				8B43266F24402A7800D90EDD /* RoundHistoryViewController.swift in Sources */,
+				8B8CBD642444D55400002E02 /* GlobalVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.title = "Home"
-        self.navigationItem.title = "ForePlay"
+        //self.navigationItem.title = "ForePlay"
+        let logo = UIImage(named: "app-bar-icon.png")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
         
     }
 
