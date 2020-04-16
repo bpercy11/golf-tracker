@@ -40,7 +40,6 @@
 		8B8CBD5D2444085000002E02 /* StartNewRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */; };
 		8B8CBD5F24442C5500002E02 /* EnterPastRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */; };
 		8B8CBD6224442CE200002E02 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */; };
-		8B8CBD642444D55400002E02 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CBD632444D55400002E02 /* GlobalVariables.swift */; };
 		8B9611E2243EB08D0031D11F /* NewRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */; };
 		8BE841F024311F0E00BE7BFD /* StartRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */; };
 		8BE841F2243122D700BE7BFD /* InRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */; };
@@ -52,6 +51,8 @@
 		8BE84249243142BD00BE7BFD /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE84248243142BD00BE7BFD /* Round.swift */; };
 		8BE8424B2431432C00BE7BFD /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424A2431432C00BE7BFD /* Hole.swift */; };
 		8BE8424D243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8424C243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift */; };
+		8BF6A9992448E66B00862948 /* ForePlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6A9972448E66B00862948 /* ForePlay.xcdatamodeld */; };
+		8BF6A99B2448F84300862948 /* NewCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6A99A2448F84300862948 /* NewCourseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,7 +136,6 @@
 		8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNewRoundViewController.swift; sourceTree = "<group>"; };
 		8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPastRoundViewController.swift; sourceTree = "<group>"; };
 		8B8CBD6124442CE200002E02 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
-		8B8CBD632444D55400002E02 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		8B9611E1243EB08D0031D11F /* NewRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoundViewController.swift; sourceTree = "<group>"; };
 		8BE841EF24311F0E00BE7BFD /* StartRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoundInterfaceController.swift; sourceTree = "<group>"; };
 		8BE841F1243122D700BE7BFD /* InRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InRoundInterfaceController.swift; sourceTree = "<group>"; };
@@ -147,6 +147,8 @@
 		8BE84248243142BD00BE7BFD /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		8BE8424A2431432C00BE7BFD /* Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
 		8BE8424C243146E500BE7BFD /* ConfirmFinishRoundInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmFinishRoundInterfaceController.swift; sourceTree = "<group>"; };
+		8BF6A9982448E66B00862948 /* ForePlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForePlay.xcdatamodel; sourceTree = "<group>"; };
+		8BF6A99A2448F84300862948 /* NewCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCourseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +209,8 @@
 				8B43266E24402A7800D90EDD /* RoundHistoryViewController.swift */,
 				8B8CBD5C2444085000002E02 /* StartNewRoundViewController.swift */,
 				8B8CBD5E24442C5500002E02 /* EnterPastRoundViewController.swift */,
-				8B8CBD632444D55400002E02 /* GlobalVariables.swift */,
+				8BF6A99A2448F84300862948 /* NewCourseViewController.swift */,
+				8BF6A9972448E66B00862948 /* ForePlay.xcdatamodeld */,
 			);
 			path = "Fore Play";
 			sourceTree = "<group>";
@@ -419,15 +422,16 @@
 				8B43267424402BC300D90EDD /* Round.swift in Sources */,
 				8B2692312436A15E00BA3DBE /* OtherViewController.swift in Sources */,
 				8B43267824402D1100D90EDD /* PastRound.swift in Sources */,
+				8BF6A99B2448F84300862948 /* NewCourseViewController.swift in Sources */,
 				8B8CBD6224442CE200002E02 /* CourseTableViewCell.swift in Sources */,
 				8B26922D2436A0CD00BA3DBE /* CoursesViewController.swift in Sources */,
 				8B26922F2436A11600BA3DBE /* InsightsViewController.swift in Sources */,
 				8B8CBD5D2444085000002E02 /* StartNewRoundViewController.swift in Sources */,
+				8BF6A9992448E66B00862948 /* ForePlay.xcdatamodeld in Sources */,
 				8B2692332436C51600BA3DBE /* ProfileViewController.swift in Sources */,
 				8B282F4F24301F8B00CC8F93 /* AppDelegate.swift in Sources */,
 				8B282F5124301F8B00CC8F93 /* SceneDelegate.swift in Sources */,
 				8B43266F24402A7800D90EDD /* RoundHistoryViewController.swift in Sources */,
-				8B8CBD642444D55400002E02 /* GlobalVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +779,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BF6A9972448E66B00862948 /* ForePlay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BF6A9982448E66B00862948 /* ForePlay.xcdatamodel */,
+			);
+			currentVersion = 8BF6A9982448E66B00862948 /* ForePlay.xcdatamodel */;
+			path = ForePlay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B282F4324301F8B00CC8F93 /* Project object */;
 }
